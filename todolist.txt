@@ -1,0 +1,44 @@
+*buat sebagus mungkin...
+
+1.navbar 
+    -wrapper navbar ✅
+        -animasi✅
+    -brand ✅
+        -fullname✅
+    -list content ✅
+        -home✅
+        -contact✅
+        -about✅
+        -project✅
+    -navbar cant scrolled✅
+    -link terkoneksi
+        -home connected
+        -contact connected
+        -about connected
+        -project connected
+
+2.home✅
+    -greet✅
+    -fullname✅
+    -kata kata✅
+    -animasi✅
+
+3.contact
+    -whatsapp
+    -line
+    -instagram
+    -discord
+
+4.about
+    -perkenalan diri
+        -nama
+        -sekolah
+        -jurusan
+        -kelas
+        -organisasi
+        -1 foto diri sendiri
+    
+5.footer
+    -footer text
+
+5.responsive design 100%
