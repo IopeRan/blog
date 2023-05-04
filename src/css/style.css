@@ -109,6 +109,8 @@ body {
     background-color: #222;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-header {
@@ -116,6 +118,141 @@ body {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list ul {
+    list-style: none;
+    position: relative;
+    top: 90px;
+    border: 10px solid #fff;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-list ul li {
+    background-color: #fff;
+    border-radius: 7px;
+    width: 400px;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list ul a {
+    color: #222;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-list ul li:hover {
+    background-color: #eaeaea;
+    padding: 15px;
+    position: relative;
+    left: 30px;
+}
+
+#whatsapp {
+    border: 5px solid #25D366;
+    cursor: pointer;
+}
+
+#telegram {
+    border: 5px solid #0088cc;
+    cursor: pointer;
+}
+
+#line {
+    border: 5px solid #00c300 ;
+    cursor: pointer;
+}
+
+#discord {
+    border: 5px solid #7289da;
+    cursor: pointer;
+}
+
+#instagram {
+    border: 5px solid #e4405f;
+    cursor: pointer;
+}
+
+.contact-word {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #eaeaea;
+    width: 420px;
+    text-align: justify;
+    margin-left: 15px;
+}
+
+.contact-button ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.contact-button ul li {
+    display: flex;
+    align-items: center;
+}
+
+.contact-button ul #contact-homeID, .contact-button ul #contact-aboutID {
+    background-color: #e4405f;
+    width: 200px;
+    height: 35px;
+    border-radius: 7px;
+}
+
+.contact-button ul #contact-aboutID {
+    background-color: #7289da;
+}
+
+.contact-button ul #contact-homeID:hover {
+    background-color: #db5a71;
+    color: #222;
+}
+
+.contact-button ul #contact-aboutID:hover {
+    background-color: #86a0ff;
+}
+
+.contact-button ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    left: 15px;
+    margin-right: 15px;
 }
 
 @media only screen and (max-width: 512px) {
@@ -131,6 +268,41 @@ body {
     .home-greet-fullname {
         font-size: 24px;
         margin-top: -150px;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-word {
+        position: relative;
+        top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+    }
+
+    .contact-button {
+        position: relative;
+        top: 100px;
+    }
+
+    .contact-button ul {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-button ul li #contact-homeID, .contact-button ul #contact-aboutID {
+        width: 150px;
+    }
+
+    .contact-button ul li a {
+        margin: 0;
+    }
+
+    .contact-list ul li {
+        width: 240px;
     }
 }
 
