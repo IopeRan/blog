@@ -75,7 +75,7 @@ body {
     animation:
       typing 1s steps(40, end),
       blink-caret .75s step-end infinite;
-  }
+}
   
   @keyframes typing {
     from {
@@ -255,6 +255,86 @@ body {
     margin-right: 15px;
 }
 
+.about-wrapper {
+    background: linear-gradient(to right, #87CEFA, #1E90FF);
+    width: 100%;
+    height: 100vh;
+}
+
+.about-profile {
+    display: flex;
+    justify-content: center;
+} 
+
+.about-profile-wrapper {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* efek box shadow */
+    border-radius: 4px;
+    width: 100%;
+    height: 890px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.about-image img {
+    border: 3px solid lime;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    transition: transform 0.5s, box-shadow 0.5s; /* menambahkan transisi saat transformasi dan box-shadow terjadi selama 0.5 detik */
+}
+  
+.about-image img:hover {
+    transform: rotate(360deg); /* menambahkan transformasi rotate 360 derajat saat dihover */
+    box-shadow: 0 0 20px 0 rgba(255, 102, 0, 0.8), 0 0 30px 10px rgba(255, 102, 0, 0.4), 0 0 40px 20px rgba(255, 102, 0, 0.2); /* menambahkan box shadow seperti api saat dihover */
+}
+  
+.about-name {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 500;
+}  
+
+.about-school {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.about-collage {
+    display: flex;
+    justify-content: center;
+    font-weight: 25px;
+}
+
+.about-class {
+    display: flex;
+    justify-content: center;
+    font-weight: 15px;
+    opacity: 0.5; /* menambahkan opacity pada teks sehingga menjadi lebih redup */
+}
+
+
+
+
 @media only screen and (max-width: 512px) {
     .navbar-brand {
         display: none;
@@ -288,9 +368,11 @@ body {
         top: 100px;
     }
 
-    .contact-button ul {
-        margin-left: auto;
-        margin-right: auto;
+    .contact-button {
+        display: flex;
+        justify-content: center;
+        /* margin-left: auto;
+        margin-right: auto; */
     }
 
     .contact-button ul li #contact-homeID, .contact-button ul #contact-aboutID {
@@ -304,5 +386,16 @@ body {
     .contact-list ul li {
         width: 240px;
     }
+
+    .about-name {
+        font-size: 30px;
+    }
+
+    .about-school {
+        font-size: 20px;
+    }
 }
 
+@media only screen and (max-width: 320px) {
+    
+}
